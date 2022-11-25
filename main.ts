@@ -6,11 +6,9 @@ input.onButtonPressed(Button.B, function () {
     if (A1.isTouching(A2)) {
         A2.delete()
         game.addScore(1)
-        game.gameOver()
     } else if (A1.isTouching(A3)) {
         A3.delete()
         game.addScore(1)
-        game.gameOver()
     } else if (A1.isTouching(A4)) {
         A4.delete()
         game.addScore(1)
@@ -29,4 +27,4 @@ A1 = game.createSprite(1, 1)
 A2 = game.createSprite(2, 2)
 A3 = game.createSprite(3, 3)
 A4 = game.createSprite(4, 1)
-game.startCountdown(10000)
+game.startCountdown(100000)
